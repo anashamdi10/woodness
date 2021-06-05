@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:woodnes/Widget/Field.dart';
 import 'package:woodnes/Widget/appBar.dart';
 import 'package:woodnes/Widget/login.dart';
-import 'package:woodnes/Widget/registration.dart';
 import 'package:woodnes/authentication/registrationScreen.dart';
-
 import '../Home.dart';
 
 class LoginScreen extends StatefulWidget {
