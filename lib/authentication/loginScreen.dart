@@ -5,6 +5,8 @@ import 'package:woodnes/Widget/login.dart';
 import 'package:woodnes/Widget/registration.dart';
 import 'package:woodnes/authentication/registrationScreen.dart';
 
+import '../Home.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key key}) : super(key: key);
 
@@ -59,7 +61,27 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 20,
               ),
-              button("دخول المعرض")
+              SizedBox(
+                  width: 150,
+                  child: RaisedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Home()));
+                    },
+                    color: Colors.red,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(30))),
+                    child: Text(
+                      "دخول المعرض",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                  )),
             ],
           ),
         ),

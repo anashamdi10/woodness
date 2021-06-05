@@ -20,8 +20,12 @@ class _LoginUserState extends State<LoginUser> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10),
+      ),
       width: 300,
-      color: Colors.white,
+
       child: Column(
         children: [
           Padding(
